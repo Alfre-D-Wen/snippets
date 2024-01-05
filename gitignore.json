@@ -1,0 +1,42 @@
+{
+	// Place your snippets for gitignore here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"ip_git_ignore": {
+		"prefix": "gitignore_template",
+		"body": [
+			"# ignore vivado project",
+			"/*",
+			"!/user_srcs",
+			"/user_srcs/*",
+			"",
+			"# remain branch record",
+			"!/user_srcs/doc",
+			"/user_srcs/doc/*",
+			"!/user_srcs/doc/branch_record.md",
+			"",
+			"# remain rtl & tb files",
+			"!/user_srcs/rtl",
+			"!/user_srcs/tb",
+			"/user_srcs/tb/*",
+			"!/user_srcs/tb/*.v",
+			"!/user_srcs/tb/*.sv",
+			"",
+			"# remain matlab source files",
+			"!/user_srcs/matlab",
+			"/user_srcs/matlab/*",
+			"!/user_srcs/matlab/*.m"
+		],
+		"description": "git ignore template"
+	}
+}
