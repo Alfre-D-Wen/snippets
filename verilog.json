@@ -223,6 +223,20 @@
 			"end"
 		],
 		"description": "vcd file in testbench topmodule"
+	},
+	"generate_fsdb": {
+		"prefix": "generate_fsdb_file",
+		"body": [
+			"//***************************************************************************",
+			"// fsdb File",
+			"//***************************************************************************",
+			"initial",
+			"begin",
+			"    \\$fsdbDumpfile(\"../../../$TM_FILENAME_BASE.fsdb\");",
+			"    \\$fsdbDumpvars;",
+			"end"
+		],
+		"description": "fsdb file in testbench topmodule"
 	}
 	// "do_file": {
 	// 	"prefix": "log",
