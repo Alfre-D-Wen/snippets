@@ -24,6 +24,8 @@
 			"!/user_srcs/doc",
 			"/user_srcs/doc/*",
 			"!/user_srcs/doc/branch_record.md",
+			"!/user_srcs/doc/*_IP_Design.xlsx",
+			"user_srcs/doc/~$*.xlsx",
 			"",
 			"# remain rtl & tb files",
 			"!/user_srcs/rtl",
