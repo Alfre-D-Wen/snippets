@@ -189,7 +189,15 @@
 			"end"
 		],
 		"description": "vcd file in testbench topmodule"
-	}
+	},
+	"clockingblock":{
+		"prefix": "clocking",
+		"body": [
+			"clocking @(posedge clk_in);",
+			"endclocking"
+		],
+		"description": "clocking block in testbench interface",
+	} 
 	// "do_file": {
 	// 	"prefix": "log",
 	// 	"body": [
