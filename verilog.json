@@ -198,7 +198,7 @@
 			"end",
 			"else",
 			"begin",
-			"case (_n_state_r)",
+			"case (_c_state_r)",
 			":",
 			"default: ",
 			"begin",
