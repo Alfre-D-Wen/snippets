@@ -38,6 +38,7 @@
 			"/user_srcs/tb/*",
 			"!/user_srcs/tb/*.v",
 			"!/user_srcs/tb/*.sv",
+			"!/user_srcs/tb/*.svh",
 			"",
 			"# remain matlab source files",
 			"!/user_srcs/matlab",
