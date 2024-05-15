@@ -90,7 +90,7 @@
 	"Module-0": {
 		"prefix": "MyModule_WithoutParams",
 		"body": [
-			"`timescale 1ns/1ps",
+			"`timescale 1ps/1ps",
 			"module $TM_FILENAME_BASE (",
 			"input clk_in,",
 			"input rst_n_in,",
@@ -115,7 +115,7 @@
 	"Module-1": {
 		"prefix": "MyModule_WithParams",
 		"body": [
-			"`timescale 1ns/1ps",
+			"`timescale 1ps/1ps",
 			"module $TM_FILENAME_BASE ",
 			"#(",
 			"parameter = ",
@@ -194,15 +194,15 @@
 			"always @(*) begin",
 			"if (~rst_n_in)",
 			"begin",
-			"_n_state_r = IDLE;",
+			"n_state_r = IDLE;",
 			"end",
 			"else",
 			"begin",
-			"case (_c_state_r)",
+			"case (c_state_r)",
 			":",
 			"default: ",
 			"begin",
-			"_n_state_r = IDLE;",
+			"n_state_r = IDLE;",
 			"end",
 			"endcase",
 			"end",
