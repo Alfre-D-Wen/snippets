@@ -90,7 +90,6 @@
 	"Module-0": {
 		"prefix": "MyModule_WithoutParams",
 		"body": [
-			"`timescale 1ps/1ps",
 			"module $TM_FILENAME_BASE (",
 			"input clk_in,",
 			"input rst_n_in,",
@@ -115,7 +114,6 @@
 	"Module-1": {
 		"prefix": "MyModule_WithParams",
 		"body": [
-			"`timescale 1ps/1ps",
 			"module $TM_FILENAME_BASE ",
 			"#(",
 			"parameter = ",
