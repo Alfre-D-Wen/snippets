@@ -194,7 +194,7 @@
 			"//***************************************************************************",
 			"initial",
 			"begin",
-			"    \\$dumpfile(\"../../../$TM_FILENAME_BASE.vcd\");",
+			"    \\$dumpfile(\"../../$TM_FILENAME_BASE.vcd\");",
 			"    \\$dumpvars;",
 			"end"
 		],
