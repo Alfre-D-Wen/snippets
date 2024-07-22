@@ -23,7 +23,7 @@
 			"// Design Name: $TM_FILENAME",
 			"// Module Name: ",
 			"// Project Name: ",
-			"// Target Devices: xcku060-ffva1156-2-i / xc7a35tcsg325-1",
+			"// Target Devices: xcku060-ffva1156-2-i / xc7a35tcsg325-2",
 			"// Tool Versions: Vivado 2021.1",
 			"// Description:",
 			"//",
@@ -242,7 +242,7 @@
 			"//***************************************************************************",
 			"initial",
 			"begin",
-			"    \\$dumpfile(\"../../../$TM_FILENAME_BASE.vcd\");",
+			"    \\$dumpfile(\"../../$TM_FILENAME_BASE.vcd\");",
 			"    \\$dumpvars;",
 			"end"
 		],
