@@ -17,6 +17,7 @@
 		"body": [
 			"# ignore vivado project",
 			"/*",
+			"*.pb",
 			"",
 			"# remain vivado contraints",
 			"!/*.srcs",
