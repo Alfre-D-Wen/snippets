@@ -215,8 +215,7 @@
 	"axis_verify_tb": {
 		"prefix": "axis_tb_tmplt",
 		"body": [
-			"`timescale 1ps/1ps",
-			"`include \"axis_if.sv\";",
+			"`include \"verify_if.sv\";",
 			"module $TM_FILENAME_BASE();",
 			"",
 			"import axis_verify_pkg::*;",
@@ -233,7 +232,7 @@
 			"parameter V_BLANK = 0;",
 			"parameter FRAME_VALID = 1;",
 			"",
-			"string model_location = \"\";",
+			"string model_location = \"../../../../user_srcs/tb/\";",
 			"int mem_base_addr = ;",
 			"string valid_type = \"\";",
 			"",
