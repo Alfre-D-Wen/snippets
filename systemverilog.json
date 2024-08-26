@@ -215,7 +215,8 @@
 	"axis_verify_tb": {
 		"prefix": "axis_tb_tmplt",
 		"body": [
-			"`include \"verify_if.sv\";",
+			"`timescale 1ps/1ps",
+			"`include \"verify_if.sv\"",
 			"module $TM_FILENAME_BASE();",
 			"",
 			"import axis_verify_pkg::*;",
