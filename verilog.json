@@ -146,6 +146,13 @@
 		],
 		"description": "Vivado Debug Signals Prefix"
 	},
+	"Debug-1": {
+		"prefix": "Vivado_Keep",
+		"body": [
+			"(* keep = \"true\" *)"
+		],
+		"description": "Debug-1"
+	},
 	"alwaysblock-0": {
 		"prefix": "async_submodules_always",
 		"body": [
