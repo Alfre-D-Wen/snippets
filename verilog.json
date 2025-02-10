@@ -153,6 +153,13 @@
 		],
 		"description": "Debug-1"
 	},
+	"Debug-2": {
+		"prefix": "Vivado_DontTouch",
+		"body": [
+			"(*DONT_TOUCH = \"true\"*)"
+		],
+		"description": "Debug-2"
+	},
 	"alwaysblock-0": {
 		"prefix": "async_submodules_always",
 		"body": [
