@@ -1,0 +1,31 @@
+{
+    "cocotb_isp_0": {
+        "prefix": "valid_insert",
+        "body": [
+            "def valid_insert():",
+            "    while True:",
+            "        # random.choices(population, weights)",
+            "        # return a list, [0] means pop the first element",
+            "        yield random.choices([1,0], weights=[0.0, 1])[0]"
+        ],
+        "description": "cocotb_isp"
+    },
+    "cocotb_isp_1": {
+        "prefix": "valid_insert",
+        "body": [
+            "def ready_insert():",
+            "    while True:",
+            "        # random.choices(population, weights)",
+            "        # return a list, [0] means pop the first element",
+            "        yield random.choices([1,0], weights=[0.0, 1])[0]"
+        ],
+        "description": "cocotb_isp"
+    },
+    "cocotb_isp_2": {
+        "prefix": "clock_gen",
+        "body": [
+            "cocotb.start_soon(Clock(dut.clk_in, , units=\"ns\").start())"
+        ],
+        "description": "cocotb_isp"
+    }
+}
