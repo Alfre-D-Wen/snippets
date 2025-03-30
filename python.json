@@ -11,7 +11,7 @@
         "description": "cocotb_isp"
     },
     "cocotb_isp_1": {
-        "prefix": "valid_insert",
+        "prefix": "ready_insert",
         "body": [
             "def ready_insert():",
             "    while True:",
@@ -27,5 +27,19 @@
             "cocotb.start_soon(Clock(dut.clk_in, , units=\"ns\").start())"
         ],
         "description": "cocotb_isp"
+    },
+    "cocotb_isp_3": {
+        "prefix": "agent_i",
+        "body": [
+            "agent_i = VideoAxisAgent(dut, \"ACTIVE\", \"s_axis\", valid_insert, video_trans)"
+        ],
+        "description": "cocotb_isp_3"
+    },
+    "cocotb_isp_4": {
+        "prefix": "video_mon",
+        "body": [
+            "VideoMon(dut, \"output\", valid_signal, data_signal, data_length)"
+        ],
+        "description": "cocotb_isp_4"
     }
 }
