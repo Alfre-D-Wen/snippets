@@ -10,17 +10,6 @@
         ],
         "description": "cocotb_isp"
     },
-    "cocotb_isp_1": {
-        "prefix": "ready_insert",
-        "body": [
-            "def ready_insert():",
-            "    while True:",
-            "        # random.choices(population, weights)",
-            "        # return a list, [0] means pop the first element",
-            "        yield random.choices([1,0], weights=[0.0, 1])[0]"
-        ],
-        "description": "cocotb_isp"
-    },
     "cocotb_isp_2": {
         "prefix": "clock_gen",
         "body": [
@@ -28,18 +17,56 @@
         ],
         "description": "cocotb_isp"
     },
-    "cocotb_isp_3": {
-        "prefix": "agent_i",
+    "cocotb_test_0": {
+        "prefix": "cocotb_test",
         "body": [
-            "agent_i = VideoAxisAgent(dut, \"ACTIVE\", \"s_axis\", valid_insert, video_trans)"
+            "import random",
+            "import cocotb",
+            "import logging",
+            "from cocotb.triggers import Timer",
+            "from cocotb.clock import Clock",
+            "from cocotb.regression import TestFactory",
+            "",
+            "from cocotb_isp.video_trans import VideoTrans",
+            "from cocotb_isp.video_agent import VideoAxisAgent",
+            "from cocotb_isp.video_scb import VideoAxisScb",
+            "",
+            "##############################",
+            "## cocotb test",
+            "##############################",
+            "@cocotb.test()",
+            "async def run_test(dut, hsize, vsize):",
+            "    \"\"\"generate main clocks\"\"\"",
+            "    cocotb.start_soon(Clock(dut.clk_in, , units=\"ns\").start())",
+            "",
+            "    \"\"\"log level set\"\"\"",
+            "    logging.getLogger().setLevel(logging.INFO)",
+            "",
+            "    \"\"\"instance\"\"\"",
+            "",
+            "    \"\"\"main tasks\"\"\"",
+            "    cocotb_run(",
+            "        rstn(dut),",
+            "    )",
+            "",
+            "async def rstn(dut):",
+            "    dut.rst_n_in.value = 0",
+            "    await Timer(20, \"ns\")",
+            "    dut.rst_n_in.value = 1",
+            "",
+            "def cocotb_run(*coros):",
+            "    for coro in coros:",
+            "        cocotb.start_soon(coro)  ",
+            "",
+            "##############################",
+            "## Test Factory",
+            "##############################",
+            "factory = TestFactory(run_test)",
+            "",
+            "factory.add_option()",
+            "",
+            "factory.generate_tests()"
         ],
-        "description": "cocotb_isp_3"
-    },
-    "cocotb_isp_4": {
-        "prefix": "video_mon",
-        "body": [
-            "VideoMon(dut, \"output\", valid_signal, data_signal, data_length)"
-        ],
-        "description": "cocotb_isp_4"
+        "description": "cocotb_test_0"
     }
 }
