@@ -403,8 +403,8 @@
 			"//***************************************************************************",
 			"initial",
 			"begin",
-			"    $dumpfile(\"wave/dut_wrapper.vcd\");",
-			"    $dumpvars;",
+			"    \\$dumpfile(\"wave/$TM_FILENAME_BASE.vcd\");",
+			"    \\$dumpvars;",
 			"end",
 			"",
 			"endmodule"
