@@ -39,6 +39,8 @@
             "    \"\"\"generate main clocks\"\"\"",
             "    cocotb.start_soon(Clock(dut.clk_in, , units=\"ns\").start())",
             "",
+            "    \"\"\"dut interface\"\"\"",
+            "",
             "    \"\"\"log level set\"\"\"",
             "    logging.getLogger().setLevel(logging.INFO)",
             "",
