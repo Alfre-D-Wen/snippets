@@ -68,7 +68,9 @@
             "##############################",
             "factory = TestFactory(run_test)",
             "",
-            "factory.add_option()",
+            "factory.add_option(\"test_mode\",[])",
+            "factory.add_option(\"hsize\",[])",
+            "factory.add_option(\"vsize\",[])",
             "",
             "factory.generate_tests()"
         ],
