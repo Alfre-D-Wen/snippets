@@ -183,12 +183,22 @@
 	"alwaysblock-4": {
 		"prefix": "always_cmb",
 		"body": [
-			" always@(*)",
-			" begin",
+			"always_comb begin",
 			"",
-			" end"
+			"end"
 		],
 		"description": "alwaysblock-4"
+	},
+	"alwaysblock-5": {
+		"prefix": "always_ff",
+		"body": [
+			"always_ff @(posedge clk_in) begin",
+			"    if (~rst_n_in) begin",
+			"           ",
+			"    end",
+			"end"
+		],
+		"description": "alwaysblock-5"
 	},
 	"generate_vcd": {
 		"prefix": "generate_vcd_file",
