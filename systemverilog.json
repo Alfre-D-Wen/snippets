@@ -194,7 +194,7 @@
 		"body": [
 			"always_ff @(posedge clk_in) begin",
 			"    if (~rst_n_in) begin",
-			"           ",
+			"       ",
 			"    end",
 			"end"
 		],
