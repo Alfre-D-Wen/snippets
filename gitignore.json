@@ -18,11 +18,12 @@
 			"# ignore vivado project",
 			"/*",
 			"*.pb",
+			"*.jou",
 			"",
 			"# remain vivado contraints",
 			"!/*.srcs",
 			"/*.srcs/*",
-			"!/*.srcs/constrs_1",
+			"!/*.srcs/constrs_*",
 			"",
 			"# remain user folder",
 			"!/user_srcs",
@@ -37,15 +38,20 @@
 			"!/user_srcs/rtl",
 			"!/user_srcs/tb",
 			"/user_srcs/tb/*",
+			"!/user_srcs/tb/dut",
 			"!/user_srcs/tb/*.v",
 			"!/user_srcs/tb/*.sv",
 			"!/user_srcs/tb/*.svh",
+			"!/user_srcs/tb/*.vh",
+			"!/user_srcs/tb/*.py",
+			"!/user_srcs/tb/makefile",
+			"!/user_srcs/tb/compile.mk",
 			"",
 			"# remain matlab source files",
 			"!/user_srcs/matlab",
 			"/user_srcs/matlab/*",
 			"!/user_srcs/matlab/*.m"
 		],
-		"description": "git ignore template"
+		"description": "ip_git_ignore"
 	}
 }
